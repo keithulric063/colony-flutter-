@@ -1,5 +1,3 @@
-import 'package:flutter/foundation.dart';
-
 main() {
   //     int age = 18;
   //     String sexe = "féminin";
@@ -13,6 +11,7 @@ main() {
   //   }
 
   //   //structure imbriquée
+
   //   if (age < 18) {
   //     if (sexe == "Masculin") {
   //       print("Mineur");
@@ -37,7 +36,9 @@ main() {
   //         ? ((sexe == "Masculin") ? "homme Mineur" : "femme mineure")
   //         : ((sexe == "Masculin") ? "homme Majeur" : "femme Majeure"),
   //   );
+
   //liste
+
   /* bool x = false;
   List<int> ages = [13, 20, 24, 10, 2];
   List<String> noms = ["ulric", "chadrac", "lucia"];
@@ -62,6 +63,10 @@ main() {
     boolaine x en uppercas tous les noms entré et sortie pour dectecter mm 
     avec une difference de caractaire minuscule ou majiscule */
   /*
+
+  //Map 
+
+
   Map<String, String> user = {
     "nom": "KAMBERE",
     "prenom": "Ulric",
@@ -85,7 +90,27 @@ main() {
   Map<String, List> paye = {"ulric": payeU};
   print(paye); 
   */
+
+  //structure conditionelle
+  /* 
+  for 
+  while do
+  do  while  */
+  for (int i = 1; i < 10; i++) {
+    print("test:${i}");
+  }
+  ;
+
+  //while do
+  int i = 1;
+  while (i < 10) {
+    print("Test:${i}");
+    i++;
+  }
+  //do while
+  int j = 1;
+  do {
+    print("Test:${j}");
+    j++;
+  } while (j < 10);
 }
-
-
-//collection 
