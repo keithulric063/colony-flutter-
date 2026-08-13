@@ -1,3 +1,5 @@
+import 'package:flutter/foundation.dart';
+
 main() {
   //     int age = 18;
   //     String sexe = "féminin";
@@ -36,7 +38,7 @@ main() {
   //         : ((sexe == "Masculin") ? "homme Majeur" : "femme Majeure"),
   //   );
   //liste
-  bool x = false;
+  /* bool x = false;
   List<int> ages = [13, 20, 24, 10, 2];
   List<String> noms = ["ulric", "chadrac", "lucia"];
   /* print(ages);
@@ -49,12 +51,40 @@ main() {
   ages.remove(10);
   print(ages[3]);*/
   print(noms.contains("chadrac"));
+  // celui ci c'est le mot chadrack changes c ne va pas le dectecter 
   for (var nom in noms) {
     if (nom.toUpperCase() == "chadrac".toUpperCase()) {
       x = true;
     }
-  }
+
   print(x);
+  // ici on resous le probleme avec une boucle for et en creant une variable
+    boolaine x en uppercas tous les noms entré et sortie pour dectecter mm 
+    avec une difference de caractaire minuscule ou majiscule */
+  /*
+  Map<String, String> user = {
+    "nom": "KAMBERE",
+    "prenom": "Ulric",
+    "sexe": "M",
+    "age": "19",
+  };
+  print(user["nom"]);
+  print(
+    "Dans notre collection avons nous une cle 'sexe'?:${user.containsKey('sexe')}",
+  );
+  print(user["noms"] == "chadrac");
+  user["sexe"] = "X";
+  print(user["sexe"]);
+  user.remove('sexe');
+  print(
+    "Dans notre collection avons nous une cle 'sexe'?:${user.containsKey('sexe')}",
+  );*/
+
+  /*une map contenant un string comme cles et une list comme valeur 
+  List<String> payeU = ['10', '20', '30'];
+  Map<String, List> paye = {"ulric": payeU};
+  print(paye); 
+  */
 }
 
 
