@@ -1,5 +1,3 @@
-import 'dart:nativewrappers/_internal/vm/bin/vmservice_io.dart';
-
 main() {
   //     int age = 18;
   //     String sexe = "féminin";
@@ -37,9 +35,11 @@ main() {
   //         ? ((sexe == "Masculin") ? "homme Mineur" : "femme mineure")
   //         : ((sexe == "Masculin") ? "homme Majeur" : "femme Majeure"),
   //   );
+  //liste
   bool x = false;
   List<int> ages = [13, 20, 24, 10, 2];
-  List<String> noms = ["ulric", "lucia", "chadrac"];
+  List<String> noms = ["ulric", "chadrac", "lucia"];
+  /* print(ages);
   print(ages[3]);
   ages.add(56);
   print(ages[5]);
@@ -47,7 +47,7 @@ main() {
   ages.removeAt(5);
   print(ages.length);
   ages.remove(10);
-  print(ages[3]);
+  print(ages[3]);*/
   print(noms.contains("chadrac"));
   for (var nom in noms) {
     if (nom.toUpperCase() == "chadrac".toUpperCase()) {
@@ -56,6 +56,6 @@ main() {
   }
   print(x);
 }
-//liste 
+
 
 //collection 
