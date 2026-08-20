@@ -1,3 +1,5 @@
+import 'package:colonie_widget_/ui/home.dart';
+import 'package:colonie_widget_/ui/login.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,6 +21,11 @@ class MyApp extends StatelessWidget {
       ),
       home: const MyHomePage(title: 'RingFlow'),
       debugShowCheckedModeBanner: false,
+      initialRoute: '/',
+      routes: {
+        '/home': (context) => const HomeUI(),
+        '/login': (context) => const LoginUI(),
+      },
     );
   }
 }
@@ -48,33 +55,44 @@ class _MyHomePageState extends State<MyHomePage> {
             Row(
               mainAxisAlignment: .center,
               children: [
-                Container(
-                  width: 100,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Colors.red,
-                    border: Border.all(color: Colors.black),
-                    borderRadius: BorderRadius.all(Radius.elliptical(10, 10)),
-                  ),
-                  child: Column(
-                    mainAxisAlignment: .center,
-                    children: [
-                      Icon(Icons.person, size: 40, color: Colors.white),
-                      Text(
-                        'utilisateur',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
+                InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/login');
+                  },
+                  child: Container(
+                    width: 100,
+                    height: 100,
+                    decoration: BoxDecoration(
+                      color: Colors.red,
+                      border: Border.all(color: Colors.black),
+                      borderRadius: BorderRadius.all(Radius.elliptical(10, 10)),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: .center,
+                      children: [
+                        Icon(Icons.person, size: 40, color: Colors.white),
+                        Text(
+                          'utilisateur',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
                 const SizedBox(width: 20),
-                Container(
-                  color: const Color.fromARGB(255, 122, 209, 28),
-                  width: 100,
-                  height: 100,
+
+                InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/home');
+                  },
+                  child: Container(
+                    color: const Color.fromARGB(255, 122, 209, 28),
+                    width: 100,
+                    height: 100,
+                  ),
                 ),
                 const SizedBox(width: 20),
                 Container(color: Colors.green, width: 100, height: 100),
